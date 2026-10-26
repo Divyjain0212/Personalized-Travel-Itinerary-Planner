@@ -21,3 +21,4 @@ frontend/dist/
 
 # Runtime data
 data/trips.json
+.vercel
