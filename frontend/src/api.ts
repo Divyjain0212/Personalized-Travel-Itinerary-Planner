@@ -2,6 +2,7 @@ declare global {
   interface ImportMeta {
     readonly env?: {
       readonly VITE_API_URL?: string;
+      readonly PROD?: boolean;
     };
   }
 }
@@ -18,7 +19,7 @@ export type Recommendation = { city: string; country: string; match_score: numbe
 export type PlanResponse = { preferences: Preferences; recommendations: Recommendation[]; itinerary: Itinerary | null };
 export type SavedTrip = { id: string; name: string; destination: string; duration_days: number; budget: string; saved_at: string; preferences: Preferences; itinerary: Itinerary };
 
-const API_URL = import.meta.env?.VITE_API_URL ?? "http://localhost:8082";
+const API_URL = import.meta.env?.VITE_API_URL ?? (import.meta.env?.PROD ? "" : "http://localhost:8082");
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   let response: Response;
   try {

@@ -295,11 +295,13 @@ uvicorn app.main:app --host 0.0.0.0 --port 8082
 
 ## Deployment
 
-The frontend and backend are deployed separately:
+The frontend and backend can be deployed together on Vercel, or separately:
 
 - **Vercel** hosts the React/Vite frontend.
 - **Render, Railway, Fly.io, or Azure App Service** hosts the FastAPI backend.
 - **Supabase** provides the production database.
+
+This repository now includes [api/index.py](./api/index.py), which exposes the FastAPI app as a Vercel Python function. For a single-project Vercel deployment, leave `VITE_API_URL` unset so the frontend calls the same-origin `/api` routes.
 
 ### Deploy the frontend to Vercel
 
@@ -310,13 +312,23 @@ The repository includes [vercel.json](./vercel.json), so Vercel can build the fr
 1. Open [Vercel](https://vercel.com) and choose **Add New Project**.
 2. Import `Divyjain0212/Personalized-Travel-Itinerary-Planner`.
 3. Keep the repository root as the project root.
-4. Add this environment variable:
+4. For the included Vercel FastAPI function, do not add `VITE_API_URL`. The frontend automatically uses same-origin `/api` routes in production. If you deploy the backend separately, add:
 
    ```env
    VITE_API_URL=https://your-fastapi-service.example.com
    ```
 
-5. Click **Deploy**.
+5. Add any required backend secrets in Vercel Project Settings:
+
+   ```env
+   CORS_ORIGINS=https://your-project.vercel.app
+   SUPABASE_URL=...
+   SUPABASE_SERVICE_KEY=...
+   GEMINI_API_KEY=...
+   GROQ_API_KEY=...
+   ```
+
+6. Click **Deploy**.
 
 Vercel will use:
 
