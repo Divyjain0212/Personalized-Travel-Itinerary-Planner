@@ -1,0 +1,252 @@
+[
+  {
+    "id": "aac62ed7-9612-47e9-92d2-d8420a04e3cf",
+    "name": "Kyoto: your 5-day story",
+    "saved_at": "2026-10-26 17:58 UTC",
+    "destination": "Kyoto",
+    "duration_days": 5,
+    "budget": "Luxury",
+    "party": "Friends",
+    "preferences": {
+      "destination": "Kyoto",
+      "vibe": "Beach",
+      "duration_days": 5,
+      "travel_dates": [
+        "2026-10-27",
+        "2026-10-31"
+      ],
+      "budget": "Luxury",
+      "party": "Friends",
+      "pace": "Relaxed",
+      "interests": [
+        "Food",
+        "History"
+      ],
+      "provider": "Google Gemini"
+    },
+    "itinerary": {
+      "title": "Kyoto: your 5-day story",
+      "destination": "Kyoto",
+      "currency": "JPY",
+      "slug": "kyoto-5-day-itinerary",
+      "usd_rate": 0.0067,
+      "days": [
+        {
+          "day_number": 1,
+          "area": "Higashiyama",
+          "route_summary": "Stay within Higashiyama; nearby stops are grouped to avoid backtracking.",
+          "slots": [
+            {
+              "time": "09:00",
+              "title": "Morning Sightseeing",
+              "description": "Start early at Kiyomizu-dera, then follow the preserved Ninenzaka and Sannenzaka lanes.",
+              "cost_local": 9402.985074626866,
+              "cost_usd": 63.0,
+              "cost_inr": 5292.0,
+              "category": "Sightseeing"
+            },
+            {
+              "time": "12:30",
+              "title": "Lunch Recommendation",
+              "description": "Choose a seasonal tofu or soba set in a quiet Higashiyama restaurant.",
+              "cost_local": 4835.820895522388,
+              "cost_usd": 32.4,
+              "cost_inr": 2721.6,
+              "category": "Lunch"
+            },
+            {
+              "time": "15:00",
+              "title": "Afternoon Leisure",
+              "description": "Unwind in Maruyama Park and explore the craft shops around Gion.",
+              "cost_local": 5373.134328358209,
+              "cost_usd": 36.0,
+              "cost_inr": 3024.0,
+              "category": "Leisure"
+            },
+            {
+              "time": "19:00",
+              "title": "Evening Dining & Entertainment",
+              "description": "Reserve a small Kyoto kaiseki or izakaya table near Pontocho.",
+              "cost_local": 11283.58208955224,
+              "cost_usd": 75.60000000000001,
+              "cost_inr": 6350.400000000001,
+              "category": "Evening"
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "area": "Arashiyama",
+          "route_summary": "Stay within Arashiyama; nearby stops are grouped to avoid backtracking.",
+          "slots": [
+            {
+              "time": "09:00",
+              "title": "Morning Sightseeing",
+              "description": "Walk the bamboo grove early and continue to Tenryu-ji temple gardens.",
+              "cost_local": 9402.985074626866,
+              "cost_usd": 63.0,
+              "cost_inr": 5292.0,
+              "category": "Sightseeing"
+            },
+            {
+              "time": "12:30",
+              "title": "Lunch Recommendation",
+              "description": "Enjoy yudofu or a vegetarian-friendly set meal near the river.",
+              "cost_local": 4835.820895522388,
+              "cost_usd": 32.4,
+              "cost_inr": 2721.6,
+              "category": "Lunch"
+            },
+            {
+              "time": "15:00",
+              "title": "Afternoon Leisure",
+              "description": "Cross Togetsukyo Bridge and take a slow riverside walk through Saga.",
+              "cost_local": 5373.134328358209,
+              "cost_usd": 36.0,
+              "cost_inr": 3024.0,
+              "category": "Leisure"
+            },
+            {
+              "time": "19:00",
+              "title": "Evening Dining & Entertainment",
+              "description": "Return to Gion for tea, lantern-lit lanes, and a compact dinner.",
+              "cost_local": 11283.58208955224,
+              "cost_usd": 75.60000000000001,
+              "cost_inr": 6350.400000000001,
+              "category": "Evening"
+            }
+          ]
+        },
+        {
+          "day_number": 3,
+          "area": "Gion",
+          "route_summary": "Stay within Gion; nearby stops are grouped to avoid backtracking.",
+          "slots": [
+            {
+              "time": "09:00",
+              "title": "Morning Sightseeing",
+              "description": "Explore a signature landmark cluster with a local guide.",
+              "cost_local": 9402.985074626866,
+              "cost_usd": 63.0,
+              "cost_inr": 5292.0,
+              "category": "Sightseeing"
+            },
+            {
+              "time": "12:30",
+              "title": "Lunch Recommendation",
+              "description": "A well-reviewed neighbourhood table with a local speciality.",
+              "cost_local": 4835.820895522388,
+              "cost_usd": 32.4,
+              "cost_inr": 2721.6,
+              "category": "Lunch"
+            },
+            {
+              "time": "15:00",
+              "title": "Afternoon Leisure",
+              "description": "Keep the afternoon flexible for a scenic walk, market, or caf\u00e9 stop.",
+              "cost_local": 5373.134328358209,
+              "cost_usd": 36.0,
+              "cost_inr": 3024.0,
+              "category": "Leisure"
+            },
+            {
+              "time": "19:00",
+              "title": "Evening Dining & Entertainment",
+              "description": "A relaxed dinner followed by a memorable local experience.",
+              "cost_local": 11283.58208955224,
+              "cost_usd": 75.60000000000001,
+              "cost_inr": 6350.400000000001,
+              "category": "Evening"
+            }
+          ]
+        },
+        {
+          "day_number": 4,
+          "area": "Fushimi",
+          "route_summary": "Stay within Fushimi; nearby stops are grouped to avoid backtracking.",
+          "slots": [
+            {
+              "time": "09:00",
+              "title": "Morning Sightseeing",
+              "description": "Explore a signature landmark cluster with a local guide.",
+              "cost_local": 9402.985074626866,
+              "cost_usd": 63.0,
+              "cost_inr": 5292.0,
+              "category": "Sightseeing"
+            },
+            {
+              "time": "12:30",
+              "title": "Lunch Recommendation",
+              "description": "A well-reviewed neighbourhood table with a local speciality.",
+              "cost_local": 4835.820895522388,
+              "cost_usd": 32.4,
+              "cost_inr": 2721.6,
+              "category": "Lunch"
+            },
+            {
+              "time": "15:00",
+              "title": "Afternoon Leisure",
+              "description": "Keep the afternoon flexible for a scenic walk, market, or caf\u00e9 stop.",
+              "cost_local": 5373.134328358209,
+              "cost_usd": 36.0,
+              "cost_inr": 3024.0,
+              "category": "Leisure"
+            },
+            {
+              "time": "19:00",
+              "title": "Evening Dining & Entertainment",
+              "description": "A relaxed dinner followed by a memorable local experience.",
+              "cost_local": 11283.58208955224,
+              "cost_usd": 75.60000000000001,
+              "cost_inr": 6350.400000000001,
+              "category": "Evening"
+            }
+          ]
+        },
+        {
+          "day_number": 5,
+          "area": "Higashiyama",
+          "route_summary": "Stay within Higashiyama; nearby stops are grouped to avoid backtracking.",
+          "slots": [
+            {
+              "time": "09:00",
+              "title": "Morning Sightseeing",
+              "description": "Start early at Kiyomizu-dera, then follow the preserved Ninenzaka and Sannenzaka lanes.",
+              "cost_local": 9402.985074626866,
+              "cost_usd": 63.0,
+              "cost_inr": 5292.0,
+              "category": "Sightseeing"
+            },
+            {
+              "time": "12:30",
+              "title": "Lunch Recommendation",
+              "description": "Choose a seasonal tofu or soba set in a quiet Higashiyama restaurant.",
+              "cost_local": 4835.820895522388,
+              "cost_usd": 32.4,
+              "cost_inr": 2721.6,
+              "category": "Lunch"
+            },
+            {
+              "time": "15:00",
+              "title": "Afternoon Leisure",
+              "description": "Unwind in Maruyama Park and explore the craft shops around Gion.",
+              "cost_local": 5373.134328358209,
+              "cost_usd": 36.0,
+              "cost_inr": 3024.0,
+              "category": "Leisure"
+            },
+            {
+              "time": "19:00",
+              "title": "Evening Dining & Entertainment",
+              "description": "Reserve a small Kyoto kaiseki or izakaya table near Pontocho.",
+              "cost_local": 11283.58208955224,
+              "cost_usd": 75.60000000000001,
+              "cost_inr": 6350.400000000001,
+              "category": "Evening"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
