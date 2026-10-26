@@ -295,7 +295,61 @@ uvicorn app.main:app --host 0.0.0.0 --port 8082
 
 ## Deployment
 
-### Backend
+The frontend and backend are deployed separately:
+
+- **Vercel** hosts the React/Vite frontend.
+- **Render, Railway, Fly.io, or Azure App Service** hosts the FastAPI backend.
+- **Supabase** provides the production database.
+
+### Deploy the frontend to Vercel
+
+The repository includes [vercel.json](./vercel.json), so Vercel can build the frontend from the repository root.
+
+#### Option A: Vercel dashboard
+
+1. Open [Vercel](https://vercel.com) and choose **Add New Project**.
+2. Import `Divyjain0212/Personalized-Travel-Itinerary-Planner`.
+3. Keep the repository root as the project root.
+4. Add this environment variable:
+
+   ```env
+   VITE_API_URL=https://your-fastapi-service.example.com
+   ```
+
+5. Click **Deploy**.
+
+Vercel will use:
+
+```text
+Install command: npm --prefix frontend install
+Build command: npm --prefix frontend run build
+Output directory: frontend/dist
+```
+
+#### Option B: Vercel CLI
+
+Install and authenticate with the Vercel CLI:
+
+```powershell
+npm install --global vercel
+vercel login
+```
+
+From the repository root:
+
+```powershell
+vercel
+```
+
+For a production deployment:
+
+```powershell
+vercel --prod
+```
+
+When prompted, link the project to the existing GitHub repository and add `VITE_API_URL` with the public backend URL.
+
+### Deploy the backend
 
 Deploy the `backend` directory to a Python hosting service such as:
 
@@ -315,21 +369,21 @@ GEMINI_API_KEY=...
 GROQ_API_KEY=...
 ```
 
-### Frontend
+Use this backend start command:
 
-Deploy the `frontend` directory to:
-
-- Vercel
-- Netlify
-- Cloudflare Pages
-
-Set the frontend environment variable to the public backend URL:
-
-```env
-VITE_API_URL=https://your-backend-domain.com
+```text
+uvicorn app.main:app --host 0.0.0.0 --port $PORT
 ```
 
-Do not use `localhost` in the production frontend configuration.
+After deployment, verify:
+
+```text
+https://your-fastapi-service.example.com/health
+```
+
+Then set the backend URL as the Vercel `VITE_API_URL` environment variable and redeploy the frontend.
+
+Configure CORS and Supabase secrets through the platform secret manager; never commit `.env` files.
 
 ---
 
