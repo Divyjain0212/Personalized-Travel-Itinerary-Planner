@@ -16,6 +16,11 @@ def health() -> dict[str, str]:
     return {"status": "ok", "environment": settings.environment}
 
 
+@app.get("/api/health")
+def api_health() -> dict[str, str]:
+    return health()
+
+
 @app.post("/api/recommendations", response_model=list)
 def get_recommendations(preferences: TripPreferences):
     return recommendations(preferences)
